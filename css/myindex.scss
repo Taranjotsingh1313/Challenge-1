@@ -1,0 +1,204 @@
+// Import From Local
+@import './mixins';
+@import './var';
+
+
+// Import From Googles
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+::selection{
+    color: white;
+    background-color: black;
+}
+// ----------------------------Header Scss--------------------------------
+.header-1{
+    width: 100vw;
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    .heading{
+        @include flex(flex,space-between,center);
+        padding: 25px 50px;
+        .logo{
+            .h4-1{
+                font-size: 3em;
+                color:$white;
+                font-family: $font-family;
+            }
+        }
+        .navbar{
+            margin-right: 50px;
+            margin-top: 30px;
+            a{
+                font-family:$font ;
+                text-decoration: none;
+                font-size: 1.5em;
+                color: $white;
+                padding: 0px 25px;
+                &:hover{
+                    color:hsl(147, 54%, 48%);
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                transition: 0.4s ease-in-out 0.1s;
+            }
+        }
+    }
+    .box-1{
+      margin-top: 50px;
+      margin-left:50px ;
+        .h2-1{
+            font-size: 4.5em;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 300;
+            font-family: $font-family;
+            letter-spacing: 11px;
+            border: 1.5px solid white;
+            display: inline-block;
+            padding:20px 70px;
+        }
+    }
+}
+// --------------------------Header Scss Finished --------------------------
+
+
+// -----------------Section-1 Scss Started---------------------
+
+.section-1{
+    width: 100vw;
+    background-color: $white;
+    height: auto;
+    .sec-div-1{
+        position: relative;
+        .img-1{
+            width: 40vw;
+            height: 60vh;
+            position: relative;
+            left: 224px;
+            top: 47px;
+        }
+        .writer-div{
+            display: inline-block;
+            margin: 18px 254px;
+            padding: 10px 100px;
+            position: absolute;
+            top: 205px;
+            left: 368px;
+            background: $white;
+            .h3-writer-1{
+                font-family: $font-family;
+                font-size: 3.5em;
+                display:inline-block;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            .p-1{
+                display: inline-block;
+                font-family: $font;
+                font-size: 1.3em;
+                color:hsl(0, 0%, 55%);
+                padding-top: 20px;
+            }
+        }
+    }
+}
+// ------------------Section-1 Scss Ended-------------------------------------
+// --------------- OUR CREATIONS Scss Started Here---------------------
+.our-creation{
+    margin-top: 250px;
+    .our-1{
+        @include flex(flex,space-between,center);
+        margin:0px 210px;
+        .h1-creation{
+            font-size: 4em;
+            font-family: $font;
+            font-weight: 400;
+        }
+        button{
+            
+             padding: 1px 25px;
+             font-size: 1em;
+             font-family: $font-family;
+             letter-spacing: 5px;
+             border: 2px solid hsl(0, 0%, 41%);
+             background-color: $white;
+             &:hover{
+                 cursor: pointer;
+                 color: $white;
+                 background-color:  hsl(0, 0%, 0%);
+             }
+             transition:0.5s linear 0.3s;
+        }
+    }
+    .first-img-contain{
+        margin-left: 192px;
+        margin-top: 80px;
+        img{
+            margin: 0px 20px;
+        }
+    }
+}
+// ---------------------Our Creation Section Ended Here------------------
+
+// -----------------------footer Scss Starts Here---------------------
+.footer{
+    width: 100vw;
+    height: 20vh;
+    background-color:  hsl(0, 0%, 0%);
+    margin-top: 25px;
+    .head{
+        @include flex(flex,space-between,center);
+        margin: 0px 75px;
+       padding-top: 25px;
+        h2{
+            font-size: 2.5em;
+            font-family: $font;
+            color: $white;
+        }
+        .logos{
+            img{
+                padding: 0px 10px;
+                font-size: 2em;
+                color: $white;
+                &:hover{
+                    cursor: pointer;
+                    color: hsl(0, 76%, 43%);
+                }
+            }
+        }
+       
+    }
+    .below{
+       margin: 40px 40px;
+        @include flex(flex,space-between,center);
+        a{
+            font-family:$font ;
+            text-decoration: none;
+            font-size: 1em;
+            color: hsl(0, 0%, 55%);
+            padding: 0px 15px;
+            text-decoration: none;
+            &:hover{
+                color:  $white;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            transition: 0.4s ease-in-out 0.1s;
+        }
+        h3{
+            color: hsl(0, 0%, 55%);
+            font-family: $font;
+        }
+    }
+}
