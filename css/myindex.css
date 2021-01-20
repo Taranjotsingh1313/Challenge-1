@@ -54,6 +54,7 @@
 }
 
 .header-1 .heading .navbar a {
+  outline: none;
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   font-size: 1.5em;
@@ -154,6 +155,7 @@
 }
 
 .our-creation .our-1 button {
+  outline: none;
   padding: 1px 25px;
   font-size: 1em;
   font-family: "Alata", sans-serif;
@@ -231,6 +233,7 @@
 }
 
 .footer .below a {
+  outline: none;
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   font-size: 1em;
@@ -250,5 +253,95 @@
 .footer .below h3 {
   color: #8c8c8c;
   font-family: "Josefin Sans", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .header-1 {
+    height: 61vh;
+  }
+  .header-1 .heading .logo .h4-1 {
+    font-size: 1em;
+  }
+  .header-1 .heading .navbar {
+    margin-right: 0px;
+    margin-top: 5px;
+  }
+  .header-1 .heading .navbar a {
+    font-size: 0.5em;
+    padding: 0px 5px;
+  }
+  .header-1 .box-1 {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .header-1 .box-1 .h2-1 {
+    font-size: 1.5em;
+    padding: 16px 20px;
+  }
+  .section-1 .sec-div-1 .img-1 {
+    width: 24vw;
+    height: 27vh;
+    position: relative;
+    left: 76px;
+    top: 45px;
+  }
+  .section-1 .sec-div-1 .writer-div {
+    top: 118px;
+    left: 112px;
+    margin: 4px 60px;
+    padding: 7px 0px;
+  }
+  .section-1 .sec-div-1 .writer-div .h3-writer-1 {
+    font-size: 23px;
+  }
+  .section-1 .sec-div-1 .writer-div .p-1 {
+    font-size: 14px;
+    padding-top: 8px;
+  }
+  .our-creation {
+    margin-top: 160px;
+  }
+  .our-creation .our-1 {
+    margin: 0px 40px;
+  }
+  .our-creation .our-1 .h1-creation {
+    font-size: 3em;
+  }
+  .our-creation .our-1 button {
+    padding: 0px 7px;
+    font-size: 1em;
+  }
+  .our-creation .first-img-contain {
+    margin-left: 54px;
+    margin-top: 59px;
+  }
+  .our-creation .first-img-contain img {
+    margin: 0px 1px;
+    width: 20vw;
+  }
+  .footer {
+    height: 30vh;
+  }
+  .footer .head {
+    margin: 0px 20px;
+  }
+  .footer .head .logos img {
+    padding: 0px 8px;
+  }
+  .footer .head h2 {
+    font-size: 1.5em;
+  }
+  .footer .below {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .footer .below a {
+    font-size: 15px;
+  }
+  .footer .below h3 {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=myindex.css.map */
