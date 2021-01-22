@@ -336,4 +336,97 @@ body {
     font-size: 10px;
   }
 }
+
+@media screen and (max-width: 540px) {
+  .header-1 {
+    height: 100vh;
+  }
+  .header-1 .heading .logo .h4-1 {
+    font-size: 30px;
+  }
+  .header-1 .heading .navbar {
+    display: none;
+  }
+  .header-1 .heading .navbar a {
+    font-size: 15px;
+  }
+  .header-1 .box-1 {
+    margin-top: 280px;
+  }
+  .header-1 .box-1 .h2-1 {
+    font-size: 30px;
+  }
+  .section-1 .sec-div-1 {
+    position: unset !important;
+  }
+  .section-1 .sec-div-1 .img-1 {
+    width: 55vw;
+    height: 50vh;
+    left: 150px;
+  }
+  .section-1 .sec-div-1 .writer-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: unset !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-1 .sec-div-1 .writer-div {
+    left: 150px;
+    margin-top: 60px;
+    padding: 19px 131px;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  .section-1 .sec-div-1 .writer-div .p-1 {
+    display: inline-block;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1em;
+    color: #8c8c8c;
+    padding: 0px 49px;
+    /* padding-top: 20px; */
+    padding-right: 4px;
+  }
+  .section-1 .sec-div-1 .writer-div .h3-writer-1 {
+    font-size: 34px;
+    padding-left: 41px;
+    padding-right: 15px;
+  }
+  .our-creation {
+    margin-top: 34px;
+  }
+  .our-creation .our-1 {
+    margin: 0px 50px;
+  }
+  .our-creation .our-1 .h1-creation {
+    font-size: 30px;
+  }
+  .our-creation .images .first-img-contain {
+    margin-left: 44px;
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .our-creation .images .first-img-contain img {
+    width: 154px;
+    height: 165px;
+    margin: 0px 2px;
+  }
+  .footer {
+    height: 30vh;
+  }
+  .footer .head h2 {
+    font-size: 20px;
+  }
+  .footer .below h3 {
+    font-size: 15px;
+  }
+  .footer .below .as a {
+    font-size: 10px;
+  }
+}
 /*# sourceMappingURL=myindex.css.map */
